@@ -16,7 +16,9 @@ docker run -it --rm -p 8081:8081 --link <ID_OF_MONGO_IMAGE>:mongo mongo-express
 ## To start backend server
  
 ```
-RUN nodemon server.js
+npm install nodemon
+
+nodemon server.js
 ```
 
 # How to run fornted React Js
