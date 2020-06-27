@@ -1,4 +1,4 @@
-# How to run backed
+# How to run backend
 
 ## First install docker
 
