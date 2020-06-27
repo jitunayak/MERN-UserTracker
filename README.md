@@ -1,8 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# How to run backed
 
-## Available Scripts
+## First install docker
 
-In the project directory, you can run:
+```
+docker pull mongo
+docker pull mongo-express
+
+docker run -p 27017:27017 --name mongodb mongo
+
+docker start mongodb
+
+docker run -it --rm -p 8081:8081 --link <ID_OF_MONGO_IMAGE>:mongo mongo-express
+```
+
+## To start backend server
+ 
+```
+RUN nodemon server.js
+```
+
+# How to run fornted React Js
 
 ### `npm start`
 
